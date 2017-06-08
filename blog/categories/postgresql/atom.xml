@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Postgresql | 4ING的航海日誌]]></title>
+  <link href="http://glasses618.github.io/blog/categories/postgresql/atom.xml" rel="self"/>
+  <link href="http://glasses618.github.io/"/>
+  <updated>2017-06-08T11:41:55+08:00</updated>
+  <id>http://glasses618.github.io/</id>
+  <author>
+    <name><![CDATA[4ING]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Postgresql 常用命令]]></title>
+    <link href="http://glasses618.github.io/blog/2017/06/08/postgresql-chang-yong-ming-ling/"/>
+    <updated>2017-06-08T11:29:36+08:00</updated>
+    <id>http://glasses618.github.io/blog/2017/06/08/postgresql-chang-yong-ming-ling</id>
+    <content type="html"><![CDATA[<pre><code class="bash">$createdb [database_name]
+</code></pre>
+
+<pre><code class="bash">$pg_dump [database_name] -f [backup_filename]
+</code></pre>
+
+<pre><code class="bash">$psql -f [backup_filename] [database_name]
+</code></pre>
+
+<pre><code class="bash">$dropdb [database_name]
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
