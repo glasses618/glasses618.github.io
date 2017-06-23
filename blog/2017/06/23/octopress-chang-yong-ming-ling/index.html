@@ -5,15 +5,15 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Postgresql 常用命令 - 4ING 的航海日誌</title>
+  <title>Octopress 常用命令 - 4ING 的航海日誌</title>
   <meta name="author" content="4ING">
 
   
-  <meta name="description" content="1
-$createdb [database_name] 1
-$pg_dump [database_name] -f [backup_filename] 1
-$psql -f [backup_filename] [database_name] 1
-$dropdb [database_name] ">
+  <meta name="description" content="新增文章 1
+bundle exec rake new_post[&#39;post_title&#39;] 預覽網站 1
+bundle exec rake preview 生成網站 1
+bundle exec rake generate 發佈網站 1
+bundle exec rake &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +22,7 @@ $dropdb [database_name] ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://glasses618.github.io/blog/2017/06/08/postgresql-chang-yong-ming-ling">
+  <link rel="canonical" href="http://glasses618.github.io/blog/2017/06/23/octopress-chang-yong-ming-ling">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="4ING 的航海日誌" type="application/atom+xml">
@@ -107,7 +107,7 @@ $dropdb [database_name] ">
   <header>
     
       
-        <h1 class="entry-title">Postgresql 常用命令</h1>
+        <h1 class="entry-title">Octopress 常用命令</h1>
       
     
     
@@ -117,7 +117,7 @@ $dropdb [database_name] ">
 
 
 
-<time class='entry-date' datetime='2017-06-08T11:29:36+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>11:29 am</span></time>
+<time class='entry-date' datetime='2017-06-23T13:43:06+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2017</span></span> <span class='time'>1:43 pm</span></time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -127,23 +127,31 @@ $dropdb [database_name] ">
   </header>
 
 
-<div class="entry-content"><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$createdb</span> <span class="o">[</span>database_name<span class="o">]</span>
+<div class="entry-content"><p>新增文章</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>bundle <span class="nb">exec </span>rake new_post<span class="o">[</span><span class="s1">&#39;post_title&#39;</span><span class="o">]</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>預覽網站</p>
+
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$pg_dump</span> <span class="o">[</span>database_name<span class="o">]</span> -f <span class="o">[</span>backup_filename<span class="o">]</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>bundle <span class="nb">exec </span>rake preview
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>生成網站</p>
+
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$psql</span> -f <span class="o">[</span>backup_filename<span class="o">]</span> <span class="o">[</span>database_name<span class="o">]</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>bundle <span class="nb">exec </span>rake generate
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>發佈網站</p>
+
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$dropdb</span> <span class="o">[</span>database_name<span class="o">]</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>bundle <span class="nb">exec </span>rake deploy
 </span></code></pre></td></tr></table></div></figure>
 
 </div>
@@ -168,13 +176,13 @@ $dropdb [database_name] ">
 
 
 
-<time class='entry-date' datetime='2017-06-08T11:29:36+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>11:29 am</span></time>
+<time class='entry-date' datetime='2017-06-23T13:43:06+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2017</span></span> <span class='time'>1:43 pm</span></time>
       
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/postgresql/'>postgresql</a>
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
   
 </span>
 
@@ -183,7 +191,7 @@ $dropdb [database_name] ">
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://glasses618.github.io/blog/2017/06/08/postgresql-chang-yong-ming-ling/" data-via="glasses618" data-counturl="http://glasses618.github.io/blog/2017/06/08/postgresql-chang-yong-ming-ling/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://glasses618.github.io/blog/2017/06/23/octopress-chang-yong-ming-ling/" data-via="glasses618" data-counturl="http://glasses618.github.io/blog/2017/06/23/octopress-chang-yong-ming-ling/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -196,10 +204,8 @@ $dropdb [database_name] ">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2017/06/08/ubuntu-chang-yong-ming-ling/" title="Previous Post: Ubuntu 常用命令">&laquo; Ubuntu 常用命令</a>
+        <a class="basic-alignment left" href="/blog/2017/06/08/postgresql-chang-yong-ming-ling/" title="Previous Post: Postgresql 常用命令">&laquo; Postgresql 常用命令</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2017/06/23/octopress-chang-yong-ming-ling/" title="Next Post: octopress 常用命令">octopress 常用命令 &raquo;</a>
       
     </p>
   </footer>
@@ -229,8 +235,8 @@ $dropdb [database_name] ">
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://glasses618.github.io/blog/2017/06/08/postgresql-chang-yong-ming-ling/';
-        var disqus_url = 'http://glasses618.github.io/blog/2017/06/08/postgresql-chang-yong-ming-ling/';
+        var disqus_identifier = 'http://glasses618.github.io/blog/2017/06/23/octopress-chang-yong-ming-ling/';
+        var disqus_url = 'http://glasses618.github.io/blog/2017/06/23/octopress-chang-yong-ming-ling/';
         var disqus_script = 'embed.js';
       
     (function () {

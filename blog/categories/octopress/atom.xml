@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | 4ING 的航海日誌]]></title>
+  <link href="http://glasses618.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://glasses618.github.io/"/>
+  <updated>2017-06-23T13:49:47+08:00</updated>
+  <id>http://glasses618.github.io/</id>
+  <author>
+    <name><![CDATA[4ING]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 常用命令]]></title>
+    <link href="http://glasses618.github.io/blog/2017/06/23/octopress-chang-yong-ming-ling/"/>
+    <updated>2017-06-23T13:43:06+08:00</updated>
+    <id>http://glasses618.github.io/blog/2017/06/23/octopress-chang-yong-ming-ling</id>
+    <content type="html"><![CDATA[<p>新增文章
+<code>bash
+bundle exec rake new_post['post_title']
+</code>
+預覽網站
+<code>bash
+bundle exec rake preview
+</code>
+生成網站
+<code>bash
+bundle exec rake generate
+</code>
+發佈網站
+<code>bash
+bundle exec rake deploy
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
