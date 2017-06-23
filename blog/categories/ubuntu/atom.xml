@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | 4ING 的航海日誌]]></title>
   <link href="http://glasses618.github.io/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://glasses618.github.io/"/>
-  <updated>2017-06-23T13:54:01+08:00</updated>
+  <updated>2017-06-23T14:35:57+08:00</updated>
   <id>http://glasses618.github.io/</id>
   <author>
     <name><![CDATA[4ING]]></name>
@@ -20,11 +20,32 @@
     <id>http://glasses618.github.io/blog/2017/06/08/ubuntu-chang-yong-ming-ling</id>
     <content type="html"><![CDATA[<p>解壓縮 tar.gz 檔
 <code>bash
-$tar zxvf [file_name.tar.gz]
+$tar zxvf file_name.tar.gz
 </code>
 解壓縮 tar 檔
 <code>bash
-$tar xvf [file_name.tar]
+$tar xvf file_name.tar
+</code>
+壓縮成 gz 檔
+<code>bash
+$gzip -c input_file &gt; output_file.gz
+</code>
+解壓縮 gz 檔
+<code>bash
+$gzip -d file_name.gz
+</code></p>
+
+<p>察看檔案完整路徑
+<code>bash
+$readlink -f [file_name]
+</code>
+搜尋檔名關鍵字
+<code>bash
+$find [path] -name "*keyword*"
+</code>
+搜尋檔案內關鍵字
+<code>bash
+$grep -inR --exclude-dir={dir1,dir2} [keyword] [path]
 </code></p>
 ]]></content>
   </entry>

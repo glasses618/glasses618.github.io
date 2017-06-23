@@ -10,8 +10,10 @@
 
   
   <meta name="description" content="解壓縮 tar.gz 檔 1
-$tar zxvf [file_name.tar.gz] 解壓縮 tar 檔 1
-$tar xvf [file_name.tar] ">
+$tar zxvf file_name.tar.gz 解壓縮 tar 檔 1
+$tar xvf file_name.tar 壓縮成 gz 檔 1
+$gzip -c input_file &gt; output_file.gz 解壓縮 gz 檔 1
+$gzip -d &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -128,14 +130,49 @@ $tar xvf [file_name.tar] ">
 <div class="entry-content"><p>解壓縮 tar.gz 檔</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$tar</span> zxvf <span class="o">[</span>file_name.tar.gz<span class="o">]</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$tar</span> zxvf file_name.tar.gz
 </span></code></pre></td></tr></table></div></figure>
 
 
 <p>解壓縮 tar 檔</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$tar</span> xvf <span class="o">[</span>file_name.tar<span class="o">]</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$tar</span> xvf file_name.tar
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>壓縮成 gz 檔</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$gzip</span> -c input_file &gt; output_file.gz
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>解壓縮 gz 檔</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$gzip</span> -d file_name.gz
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>察看檔案完整路徑</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$readlink</span> -f <span class="o">[</span>file_name<span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>搜尋檔名關鍵字</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$find</span> <span class="o">[</span>path<span class="o">]</span> -name <span class="s2">&quot;*keyword*&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>搜尋檔案內關鍵字</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$grep</span> -inR --exclude-dir<span class="o">={</span>dir1,dir2<span class="o">}</span> <span class="o">[</span>keyword<span class="o">]</span> <span class="o">[</span>path<span class="o">]</span>
 </span></code></pre></td></tr></table></div></figure>
 
 </div>
