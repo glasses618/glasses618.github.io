@@ -9,6 +9,10 @@ categories: octopress
 ```bash
 $bundle exec rake new_post['post_title']
 ```
+編輯文章
+```
+$vim source/_posts/post_file
+```
 預覽網站
 ```bash
 $bundle exec rake preview

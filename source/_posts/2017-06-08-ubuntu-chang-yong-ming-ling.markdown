@@ -5,6 +5,8 @@ date: 2017-06-08 11:21:51 +0800
 comments: true
 categories: ubuntu
 ---
+# 解壓縮
+
 解壓縮 tar.gz 檔
 ```bash
 $tar zxvf file_name.tar.gz
@@ -21,6 +23,7 @@ $gzip -c input_file > output_file.gz
 ```bash
 $gzip -d file_name.gz
 ```
+# 搜尋 
 
 察看檔案完整路徑
 ```bash
@@ -34,3 +37,18 @@ $find [path] -name "*keyword*"
 ```bash
 $grep -inR --exclude-dir={dir1,dir2} [keyword] [path]
 ```
+# 移動
+
+移動到最前面
+```
+Ctrl + A
+```
+移動到最後面
+```
+Ctrl + E
+```
+清除游標前的所有文字
+```
+Ctrl + U
+```
+
