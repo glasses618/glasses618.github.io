@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | 4ING 的航海日誌]]></title>
   <link href="http://glasses618.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://glasses618.github.io/"/>
-  <updated>2017-06-23T14:35:57+08:00</updated>
+  <updated>2017-06-28T17:08:58+08:00</updated>
   <id>http://glasses618.github.io/</id>
   <author>
     <name><![CDATA[4ING]]></name>
@@ -21,6 +21,10 @@
     <content type="html"><![CDATA[<p>新增文章
 <code>bash
 $bundle exec rake new_post['post_title']
+</code>
+編輯文章
+<code>
+$vim source/_posts/post_file
 </code>
 預覽網站
 <code>bash

@@ -4,7 +4,7 @@
   <title><![CDATA[4ING 的航海日誌]]></title>
   <link href="http://glasses618.github.io/atom.xml" rel="self"/>
   <link href="http://glasses618.github.io/"/>
-  <updated>2017-06-23T14:35:57+08:00</updated>
+  <updated>2017-06-28T17:08:58+08:00</updated>
   <id>http://glasses618.github.io/</id>
   <author>
     <name><![CDATA[4ING]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Git 常用命令]]></title>
+    <link href="http://glasses618.github.io/blog/2017/06/28/git-chang-yong-ming-ling/"/>
+    <updated>2017-06-28T10:29:25+08:00</updated>
+    <id>http://glasses618.github.io/blog/2017/06/28/git-chang-yong-ming-ling</id>
+    <content type="html"><![CDATA[<p>將其他分支的某個檔案合併到目前分支</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> checkout other_branch target_file
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>顯示其他分支的檔案</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> show other_branch:path
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress 常用命令]]></title>
@@ -22,6 +45,13 @@
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$bundle</span> <span class="nb">exec </span>rake new_post<span class="o">[</span><span class="s1">&#39;post_title&#39;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>編輯文章</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$vim</span> <span class="nb">source</span>/_posts/post_file
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -80,7 +110,9 @@
     <link href="http://glasses618.github.io/blog/2017/06/08/ubuntu-chang-yong-ming-ling/"/>
     <updated>2017-06-08T11:21:51+08:00</updated>
     <id>http://glasses618.github.io/blog/2017/06/08/ubuntu-chang-yong-ming-ling</id>
-    <content type="html"><![CDATA[<p>解壓縮 tar.gz 檔</p>
+    <content type="html"><![CDATA[<h1>解壓縮</h1>
+
+<p>解壓縮 tar.gz 檔</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$tar</span> zxvf file_name.tar.gz
@@ -108,6 +140,8 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<h1>搜尋</h1>
+
 <p>察看檔案完整路徑</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -127,6 +161,31 @@
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$grep</span> -inR --exclude-dir<span class="o">={</span>dir1,dir2<span class="o">}</span> <span class="o">[</span>keyword<span class="o">]</span> <span class="o">[</span>path<span class="o">]</span>
 </span></code></pre></td></tr></table></div></figure>
+
+
+<h1>移動</h1>
+
+<p>移動到最前面</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>Ctrl + A
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>移動到最後面</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>Ctrl + E
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>清除游標前的所有文字</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>Ctrl + U
+</span></code></pre></td></tr></table></div></figure>
+
+
 
 ]]></content>
   </entry>

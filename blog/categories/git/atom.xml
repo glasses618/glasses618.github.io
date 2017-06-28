@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Git | 4ING 的航海日誌]]></title>
+  <link href="http://glasses618.github.io/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://glasses618.github.io/"/>
+  <updated>2017-06-28T17:08:58+08:00</updated>
+  <id>http://glasses618.github.io/</id>
+  <author>
+    <name><![CDATA[4ING]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Git 常用命令]]></title>
+    <link href="http://glasses618.github.io/blog/2017/06/28/git-chang-yong-ming-ling/"/>
+    <updated>2017-06-28T10:29:25+08:00</updated>
+    <id>http://glasses618.github.io/blog/2017/06/28/git-chang-yong-ming-ling</id>
+    <content type="html"><![CDATA[<p>將其他分支的某個檔案合併到目前分支
+<code>bash
+$git checkout other_branch target_file
+</code>
+顯示其他分支的檔案
+<code>bash
+$git show other_branch:path
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | 4ING 的航海日誌]]></title>
   <link href="http://glasses618.github.io/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://glasses618.github.io/"/>
-  <updated>2017-06-23T14:35:57+08:00</updated>
+  <updated>2017-06-28T17:08:58+08:00</updated>
   <id>http://glasses618.github.io/</id>
   <author>
     <name><![CDATA[4ING]]></name>
@@ -18,7 +18,9 @@
     <link href="http://glasses618.github.io/blog/2017/06/08/ubuntu-chang-yong-ming-ling/"/>
     <updated>2017-06-08T11:21:51+08:00</updated>
     <id>http://glasses618.github.io/blog/2017/06/08/ubuntu-chang-yong-ming-ling</id>
-    <content type="html"><![CDATA[<p>解壓縮 tar.gz 檔
+    <content type="html"><![CDATA[<h1>解壓縮</h1>
+
+<p>解壓縮 tar.gz 檔
 <code>bash
 $tar zxvf file_name.tar.gz
 </code>
@@ -35,6 +37,8 @@ $gzip -c input_file &gt; output_file.gz
 $gzip -d file_name.gz
 </code></p>
 
+<h1>搜尋</h1>
+
 <p>察看檔案完整路徑
 <code>bash
 $readlink -f [file_name]
@@ -46,6 +50,21 @@ $find [path] -name "*keyword*"
 搜尋檔案內關鍵字
 <code>bash
 $grep -inR --exclude-dir={dir1,dir2} [keyword] [path]
+</code></p>
+
+<h1>移動</h1>
+
+<p>移動到最前面
+<code>
+Ctrl + A
+</code>
+移動到最後面
+<code>
+Ctrl + E
+</code>
+清除游標前的所有文字
+<code>
+Ctrl + U
 </code></p>
 ]]></content>
   </entry>

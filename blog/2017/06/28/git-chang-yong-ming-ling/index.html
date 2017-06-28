@@ -5,15 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ubuntu 常用命令 - 4ING 的航海日誌</title>
+  <title>Git 常用命令 - 4ING 的航海日誌</title>
   <meta name="author" content="4ING">
 
   
-  <meta name="description" content="解壓縮 解壓縮 tar.gz 檔 1
-$tar zxvf file_name.tar.gz 解壓縮 tar 檔 1
-$tar xvf file_name.tar 壓縮成 gz 檔 1
-$gzip -c input_file &gt; output_file.gz 解壓縮 gz 檔 1
-$gzip &hellip;">
+  <meta name="description" content="將其他分支的某個檔案合併到目前分支 1
+$git checkout other_branch target_file 顯示其他分支的檔案 1
+$git show other_branch:path ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +20,7 @@ $gzip &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://glasses618.github.io/blog/2017/06/08/ubuntu-chang-yong-ming-ling">
+  <link rel="canonical" href="http://glasses618.github.io/blog/2017/06/28/git-chang-yong-ming-ling">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="4ING 的航海日誌" type="application/atom+xml">
@@ -107,7 +105,7 @@ $gzip &hellip;">
   <header>
     
       
-        <h1 class="entry-title">Ubuntu 常用命令</h1>
+        <h1 class="entry-title">Git 常用命令</h1>
       
     
     
@@ -117,7 +115,7 @@ $gzip &hellip;">
 
 
 
-<time class='entry-date' datetime='2017-06-08T11:21:51+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>11:21 am</span></time>
+<time class='entry-date' datetime='2017-06-28T10:29:25+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>10:29 am</span></time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -127,79 +125,17 @@ $gzip &hellip;">
   </header>
 
 
-<div class="entry-content"><h1>解壓縮</h1>
-
-<p>解壓縮 tar.gz 檔</p>
+<div class="entry-content"><p>將其他分支的某個檔案合併到目前分支</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$tar</span> zxvf file_name.tar.gz
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> checkout other_branch target_file
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>解壓縮 tar 檔</p>
+<p>顯示其他分支的檔案</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$tar</span> xvf file_name.tar
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>壓縮成 gz 檔</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$gzip</span> -c input_file &gt; output_file.gz
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>解壓縮 gz 檔</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$gzip</span> -d file_name.gz
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h1>搜尋</h1>
-
-<p>察看檔案完整路徑</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$readlink</span> -f <span class="o">[</span>file_name<span class="o">]</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>搜尋檔名關鍵字</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$find</span> <span class="o">[</span>path<span class="o">]</span> -name <span class="s2">&quot;*keyword*&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>搜尋檔案內關鍵字</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$grep</span> -inR --exclude-dir<span class="o">={</span>dir1,dir2<span class="o">}</span> <span class="o">[</span>keyword<span class="o">]</span> <span class="o">[</span>path<span class="o">]</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h1>移動</h1>
-
-<p>移動到最前面</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>Ctrl + A
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>移動到最後面</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>Ctrl + E
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>清除游標前的所有文字</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>Ctrl + U
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> show other_branch:path
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -226,13 +162,13 @@ $gzip &hellip;">
 
 
 
-<time class='entry-date' datetime='2017-06-08T11:21:51+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>11:21 am</span></time>
+<time class='entry-date' datetime='2017-06-28T10:29:25+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>10:29 am</span></time>
       
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/ubuntu/'>ubuntu</a>
+    <a class='category' href='/blog/categories/git/'>git</a>
   
 </span>
 
@@ -241,7 +177,7 @@ $gzip &hellip;">
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://glasses618.github.io/blog/2017/06/08/ubuntu-chang-yong-ming-ling/" data-via="glasses618" data-counturl="http://glasses618.github.io/blog/2017/06/08/ubuntu-chang-yong-ming-ling/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://glasses618.github.io/blog/2017/06/28/git-chang-yong-ming-ling/" data-via="glasses618" data-counturl="http://glasses618.github.io/blog/2017/06/28/git-chang-yong-ming-ling/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -254,8 +190,8 @@ $gzip &hellip;">
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2017/06/23/octopress-chang-yong-ming-ling/" title="Previous Post: octopress 常用命令">&laquo; octopress 常用命令</a>
       
-        <a class="basic-alignment right" href="/blog/2017/06/08/postgresql-chang-yong-ming-ling/" title="Next Post: Postgresql 常用命令">Postgresql 常用命令 &raquo;</a>
       
     </p>
   </footer>
@@ -285,8 +221,8 @@ $gzip &hellip;">
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://glasses618.github.io/blog/2017/06/08/ubuntu-chang-yong-ming-ling/';
-        var disqus_url = 'http://glasses618.github.io/blog/2017/06/08/ubuntu-chang-yong-ming-ling/';
+        var disqus_identifier = 'http://glasses618.github.io/blog/2017/06/28/git-chang-yong-ming-ling/';
+        var disqus_url = 'http://glasses618.github.io/blog/2017/06/28/git-chang-yong-ming-ling/';
         var disqus_script = 'embed.js';
       
     (function () {
