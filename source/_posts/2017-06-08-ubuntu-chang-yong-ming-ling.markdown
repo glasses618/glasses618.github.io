@@ -37,7 +37,7 @@ $find [path] -name "*keyword*"
 ```bash
 $grep -inR --exclude-dir={dir1,dir2} [keyword] [path]
 ```
-# 移動
+# Bash Keyboard Shortcuts
 
 移動到最前面
 ```
@@ -51,4 +51,7 @@ Ctrl + E
 ```
 Ctrl + U
 ```
-
+清除游標前一個文字
+```
+Ctrl + W
+```
