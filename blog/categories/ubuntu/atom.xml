@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | 4ING 的航海日誌]]></title>
   <link href="http://glasses618.github.io/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://glasses618.github.io/"/>
-  <updated>2017-06-28T17:08:58+08:00</updated>
+  <updated>2017-06-28T17:35:18+08:00</updated>
   <id>http://glasses618.github.io/</id>
   <author>
     <name><![CDATA[4ING]]></name>
@@ -52,7 +52,7 @@ $find [path] -name "*keyword*"
 $grep -inR --exclude-dir={dir1,dir2} [keyword] [path]
 </code></p>
 
-<h1>移動</h1>
+<h1>Bash Keyboard Shortcuts</h1>
 
 <p>移動到最前面
 <code>
@@ -65,6 +65,10 @@ Ctrl + E
 清除游標前的所有文字
 <code>
 Ctrl + U
+</code>
+清除游標前一個文字
+<code>
+Ctrl + W
 </code></p>
 ]]></content>
   </entry>

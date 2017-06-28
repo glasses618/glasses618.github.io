@@ -4,7 +4,7 @@
   <title><![CDATA[4ING 的航海日誌]]></title>
   <link href="http://glasses618.github.io/atom.xml" rel="self"/>
   <link href="http://glasses618.github.io/"/>
-  <updated>2017-06-28T17:08:58+08:00</updated>
+  <updated>2017-06-28T17:35:18+08:00</updated>
   <id>http://glasses618.github.io/</id>
   <author>
     <name><![CDATA[4ING]]></name>
@@ -163,7 +163,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h1>移動</h1>
+<h1>Bash Keyboard Shortcuts</h1>
 
 <p>移動到最前面</p>
 
@@ -186,6 +186,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>清除游標前一個文字</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>Ctrl + W
+</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>
