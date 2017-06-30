@@ -11,7 +11,8 @@
   
   <meta name="description" content="將其他分支的某個檔案合併到目前分支 1
 $git checkout other_branch target_file 顯示其他分支的檔案 1
-$git show other_branch:path ">
+$git show other_branch:path 比較兩個 commit 的差別 1
+$git diff revision_1:file_1 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -139,6 +140,11 @@ $git show other_branch:path ">
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>比較兩個 commit 的差別</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> diff revision_1:file_1 revision_2:file_2
+</span></code></pre></td></tr></table></div></figure>
 
 </div>
 
