@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Git | 4ING 的航海日誌]]></title>
   <link href="http://glasses618.github.io/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://glasses618.github.io/"/>
-  <updated>2017-06-30T15:41:41+08:00</updated>
+  <updated>2017-06-30T15:45:23+08:00</updated>
   <id>http://glasses618.github.io/</id>
   <author>
     <name><![CDATA[4ING]]></name>
@@ -26,7 +26,7 @@ $git checkout other_branch target_file
 <code>bash
 $git show other_branch:path
 </code>
-比較兩個 commit 的差別
+比較兩個 commit 之間的差別
 <code>bash
 $git diff revision_1:file_1 revision_2:file_2
 </code></p>
