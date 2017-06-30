@@ -13,4 +13,7 @@ $git checkout other_branch target_file
 ```bash
 $git show other_branch:path
 ```
-
+比較兩個 commit 的差別
+```bash
+$git diff revision_1:file_1 revision_2:file_2
+```
