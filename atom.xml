@@ -4,7 +4,7 @@
   <title><![CDATA[4ING 的航海日誌]]></title>
   <link href="http://glasses618.github.io/atom.xml" rel="self"/>
   <link href="http://glasses618.github.io/"/>
-  <updated>2017-06-30T15:45:23+08:00</updated>
+  <updated>2017-07-02T15:47:48+08:00</updated>
   <id>http://glasses618.github.io/</id>
   <author>
     <name><![CDATA[4ING]]></name>
@@ -36,6 +36,13 @@
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> diff revision_1:file_1 revision_2:file_2
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>修改 commit 訊息</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> commit --amend
 </span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
@@ -145,6 +152,13 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>解壓縮 zip 檔</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$unzip</span> -d dir_path
+</span></code></pre></td></tr></table></div></figure>
+
+
 <h1>搜尋</h1>
 
 <p>察看檔案完整路徑</p>
@@ -195,6 +209,22 @@
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>Ctrl + W
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>Tmux</h1>
+
+<p>detach</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span>Ctrl + B<span class="o">]</span> + D
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>attach</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$tmux</span> attach
 </span></code></pre></td></tr></table></div></figure>
 
 ]]></content>

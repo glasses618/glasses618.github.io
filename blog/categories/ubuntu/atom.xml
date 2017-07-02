@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | 4ING 的航海日誌]]></title>
   <link href="http://glasses618.github.io/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://glasses618.github.io/"/>
-  <updated>2017-06-30T15:45:23+08:00</updated>
+  <updated>2017-07-02T15:47:48+08:00</updated>
   <id>http://glasses618.github.io/</id>
   <author>
     <name><![CDATA[4ING]]></name>
@@ -35,6 +35,10 @@ $gzip -c input_file &gt; output_file.gz
 解壓縮 gz 檔
 <code>bash
 $gzip -d file_name.gz
+</code>
+解壓縮 zip 檔
+<code>bash
+$unzip -d dir_path
 </code></p>
 
 <h1>搜尋</h1>
@@ -69,6 +73,17 @@ Ctrl + U
 清除游標前一個文字
 <code>
 Ctrl + W
+</code></p>
+
+<h1>Tmux</h1>
+
+<p>detach
+<code>bash
+[Ctrl + B] + D
+</code>
+attach
+<code>bash
+$tmux attach
 </code></p>
 ]]></content>
   </entry>
