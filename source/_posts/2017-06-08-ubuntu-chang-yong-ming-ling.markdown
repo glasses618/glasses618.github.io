@@ -23,6 +23,10 @@ $gzip -c input_file > output_file.gz
 ```bash
 $gzip -d file_name.gz
 ```
+解壓縮 zip 檔
+```bash
+$unzip -d dir_path
+```
 # 搜尋 
 
 察看檔案完整路徑
@@ -54,4 +58,13 @@ Ctrl + U
 清除游標前一個文字
 ```
 Ctrl + W
+```
+# Tmux
+detach
+```bash
+[Ctrl + B] + D
+```
+attach
+```bash
+$tmux attach
 ```

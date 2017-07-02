@@ -17,3 +17,7 @@ $git show other_branch:path
 ```bash
 $git diff revision_1:file_1 revision_2:file_2
 ```
+修改 commit 訊息
+```bash
+$git commit --amend
+```
