@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Git | 4ING 的航海日誌]]></title>
   <link href="http://glasses618.github.io/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://glasses618.github.io/"/>
-  <updated>2017-07-02T15:47:48+08:00</updated>
+  <updated>2017-07-02T15:54:57+08:00</updated>
   <id>http://glasses618.github.io/</id>
   <author>
     <name><![CDATA[4ING]]></name>
@@ -33,6 +33,14 @@ $git diff revision_1:file_1 revision_2:file_2
 修改 commit 訊息
 <code>bash
 $git commit --amend
+</code>
+刪除本地分支
+<code>bash
+$git branch -d branch_name
+</code>
+刪除遠端分支
+<code>bash
+$git push repository_name --delete branch_name
 </code></p>
 ]]></content>
   </entry>
