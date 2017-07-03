@@ -29,4 +29,7 @@ $git branch -d branch_name
 ```bash
 $git push repository_name --delete branch_name
 ```
-
+將檔案從 git 版本控制中移除（會導致其他 repository 將該檔案刪除）
+```bash
+$git rm --cached file_name
+```
