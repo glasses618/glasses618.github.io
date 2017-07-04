@@ -21,6 +21,11 @@ $git diff revision_1:file_1 revision_2:file_2
 ```bash
 $git commit --amend
 ```
+獲取遠端分支
+```bash
+$git fetch
+$git checkout branch
+```
 刪除本地分支
 ```bash
 $git branch -d branch_name
