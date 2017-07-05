@@ -38,3 +38,7 @@ $git push repository_name --delete branch_name
 ```bash
 $git rm --cached file_name
 ```
+回復到上一個 commit 的狀態
+```bash
+$git reset --hard
+```
