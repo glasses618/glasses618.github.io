@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://glasses618.github.io/blog/2017/07/05/vim-chang-yong-tao-jian-yu-zhi-ling/</loc>
+<lastmod>2017-07-05T09:56:33+08:00</lastmod>
+</url>
+<url>
 <loc>http://glasses618.github.io/blog/2017/06/28/git-chang-yong-ming-ling/</loc>
 <lastmod>2017-06-28T10:29:25+08:00</lastmod>
 </url>
@@ -17,10 +21,10 @@
 <lastmod>2017-06-08T11:21:51+08:00</lastmod>
 </url>
 <url>
-<loc>http://glasses618.github.io/blog/archives/</loc>
+<loc>http://glasses618.github.io/</loc>
 </url>
 <url>
-<loc>http://glasses618.github.io/</loc>
+<loc>http://glasses618.github.io/blog/archives/</loc>
 </url>
 <url>
 <loc>http://glasses618.github.io/blog/categories/ubuntu/</loc>
@@ -33,5 +37,8 @@
 </url>
 <url>
 <loc>http://glasses618.github.io/blog/categories/git/</loc>
+</url>
+<url>
+<loc>http://glasses618.github.io/blog/categories/vim/</loc>
 </url>
 </urlset>

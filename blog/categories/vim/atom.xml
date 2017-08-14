@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Vim | 4ING 的航海日誌]]></title>
+  <link href="http://glasses618.github.io/blog/categories/vim/atom.xml" rel="self"/>
+  <link href="http://glasses618.github.io/"/>
+  <updated>2017-08-14T10:01:46+08:00</updated>
+  <id>http://glasses618.github.io/</id>
+  <author>
+    <name><![CDATA[4ING]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Vim 常用套件與指令]]></title>
+    <link href="http://glasses618.github.io/blog/2017/07/05/vim-chang-yong-tao-jian-yu-zhi-ling/"/>
+    <updated>2017-07-05T09:56:33+08:00</updated>
+    <id>http://glasses618.github.io/blog/2017/07/05/vim-chang-yong-tao-jian-yu-zhi-ling</id>
+    <content type="html"><![CDATA[<h1>視窗</h1>
+
+<p>將目前視窗放到最大
+<code>
+Ctrl + w + _
+</code>
+移動到上/下面視窗
+<code>
+Ctrl + w + up/down
+</code></p>
+
+<h1>套件管理</h1>
+
+<p><a href="http://erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/">從 vimrc 自動安裝 Vundle</a>
+<div><script src='https://gist.github.com/2383001742bf1490bb619b28cf6e3c83.js'></script>
+<noscript><pre><code>&quot; http://erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/
+&quot; Setting up Vundle - the vim plugin bundler
+    let iCanHazVundle=1
+    let vundle_readme=expand(&#39;~/.vim/bundle/vundle/README.md&#39;)
+    if !filereadable(vundle_readme) 
+        echo &quot;Installing Vundle..&quot;
+        echo &quot;&quot;
+        silent !mkdir -p ~/.vim/bundle
+        silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/vundle
+        let iCanHazVundle=0
+    endif
+    set nocompatible              &quot; be iMproved, required
+    filetype off                  &quot; required
+    set rtp+=~/.vim/bundle/vundle/
+    call vundle#begin()
+    Plugin &#39;VundleVim/Vundle.vim&#39;
+    &quot;Add your bundles here
+    Plugin &#39;Syntastic&#39; &quot;uber awesome syntax and errors highlighter
+    Plugin &#39;altercation/vim-colors-solarized&#39; &quot;T-H-E colorscheme
+    Plugin &#39;https://github.com/tpope/vim-fugitive&#39; &quot;So awesome, it should be illegal 
+    &quot;...All your other bundles...
+    if iCanHazVundle == 0
+        echo &quot;Installing Vundles, please ignore key map error messages&quot;
+        echo &quot;&quot;
+        :PluginInstall
+    endif
+
+    call vundle#end() 
+    &quot;must be last
+    filetype plugin indent on &quot; load filetype plugins/indent settings
+    colorscheme solarized
+    syntax on                      &quot; enable syntax
+ 
+&quot; Setting up Vundle - the vim plugin bundler end</code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>

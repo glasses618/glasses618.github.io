@@ -9,10 +9,9 @@
   <meta name="author" content="4ING">
 
   
-  <meta name="description" content="將其他分支的某個檔案合併到目前分支 1
-$git checkout other_branch target_file 顯示其他分支的檔案 1
-$git show other_branch:path 比較兩個 commit 之間的差別 1
-$git diff revision_1:file_1 &hellip;">
+  <meta name="description" content="視窗 將目前視窗放到最大 1
+Ctrl + w + _ 移動到上/下面視窗 1
+Ctrl + w + up/down 套件管理 從 vimrc 自動安裝 Vundle &quot; http://erikzaadi.com/2012/03/19/auto-installing-vundle- &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -108,6 +107,93 @@ $git diff revision_1:file_1 &hellip;">
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2017/07/05/vim-chang-yong-tao-jian-yu-zhi-ling/">Vim 常用套件與指令</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2017-07-05T09:56:33+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>9:56 am</span></time>
+        
+         | <a href="/blog/2017/07/05/vim-chang-yong-tao-jian-yu-zhi-ling/#disqus_thread">Comments</a>
+        
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>視窗</h1>
+
+<p>將目前視窗放到最大</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Ctrl + w + _ </span></code></pre></td></tr></table></div></figure>
+
+
+<p>移動到上/下面視窗</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Ctrl + w + up/down</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>套件管理</h1>
+
+<p><a href="http://erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/">從 vimrc 自動安裝 Vundle</a></p>
+
+<div><script src='https://gist.github.com/2383001742bf1490bb619b28cf6e3c83.js'></script>
+<noscript><pre><code>&quot; http://erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/
+&quot; Setting up Vundle - the vim plugin bundler
+    let iCanHazVundle=1
+    let vundle_readme=expand(&#39;~/.vim/bundle/vundle/README.md&#39;)
+    if !filereadable(vundle_readme) 
+        echo &quot;Installing Vundle..&quot;
+        echo &quot;&quot;
+        silent !mkdir -p ~/.vim/bundle
+        silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/vundle
+        let iCanHazVundle=0
+    endif
+    set nocompatible              &quot; be iMproved, required
+    filetype off                  &quot; required
+    set rtp+=~/.vim/bundle/vundle/
+    call vundle#begin()
+    Plugin &#39;VundleVim/Vundle.vim&#39;
+    &quot;Add your bundles here
+    Plugin &#39;Syntastic&#39; &quot;uber awesome syntax and errors highlighter
+    Plugin &#39;altercation/vim-colors-solarized&#39; &quot;T-H-E colorscheme
+    Plugin &#39;https://github.com/tpope/vim-fugitive&#39; &quot;So awesome, it should be illegal 
+    &quot;...All your other bundles...
+    if iCanHazVundle == 0
+        echo &quot;Installing Vundles, please ignore key map error messages&quot;
+        echo &quot;&quot;
+        :PluginInstall
+    endif
+
+    call vundle#end() 
+    &quot;must be last
+    filetype plugin indent on &quot; load filetype plugins/indent settings
+    colorscheme solarized
+    syntax on                      &quot; enable syntax
+ 
+&quot; Setting up Vundle - the vim plugin bundler end</code></pre></noscript></div>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2017/06/28/git-chang-yong-ming-ling/">Git 常用命令</a></h1>
     
     
@@ -155,6 +241,15 @@ $git diff revision_1:file_1 &hellip;">
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>獲取遠端分支</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> fetch
+</span><span class='line'><span class="nv">$git</span> checkout branch
+</span></code></pre></td></tr></table></div></figure>
+
+
 <p>刪除本地分支</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -169,6 +264,18 @@ $git diff revision_1:file_1 &hellip;">
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>將檔案從 git 版本控制中移除（會導致其他 repository 將該檔案刪除）</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> rm --cached file_name
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>回復到上一個 commit 的狀態</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> reset --hard
+</span></code></pre></td></tr></table></div></figure>
 
 </div>
   
@@ -349,7 +456,7 @@ $git diff revision_1:file_1 &hellip;">
 <p>解壓縮 zip 檔</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$unzip</span> -d dir_path
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$unzip</span> file_name -d dir_path
 </span></code></pre></td></tr></table></div></figure>
 
 
