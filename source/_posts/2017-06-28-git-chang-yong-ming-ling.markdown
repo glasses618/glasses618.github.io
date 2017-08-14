@@ -42,3 +42,7 @@ $git rm --cached file_name
 ```bash
 $git reset --hard
 ```
+回復某個檔案到上一個 commit 的狀態
+```bash
+$git checkout HEAD -- file_name
+```
