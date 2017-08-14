@@ -4,7 +4,7 @@
   <title><![CDATA[4ING 的航海日誌]]></title>
   <link href="http://glasses618.github.io/atom.xml" rel="self"/>
   <link href="http://glasses618.github.io/"/>
-  <updated>2017-08-14T10:01:46+08:00</updated>
+  <updated>2017-08-14T10:05:57+08:00</updated>
   <id>http://glasses618.github.io/</id>
   <author>
     <name><![CDATA[4ING]]></name>
@@ -144,6 +144,13 @@
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> reset --hard
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>回復某個檔案到上一個 commit 的狀態</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$git</span> checkout HEAD -- file_name
 </span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
